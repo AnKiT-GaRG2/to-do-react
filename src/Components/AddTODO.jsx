@@ -1,4 +1,5 @@
 import {useState} from "react";
+import { RiAddLargeFill } from "react-icons/ri";
 function AddTODO({onNewItem}){
   const [todoName,  setTodoName] = useState();
   const [dueDate,  setDueDate] = useState();
@@ -26,7 +27,7 @@ function AddTODO({onNewItem}){
         <input type='date' value={dueDate} onChange={handleDateChange}/>
       </div>
       <div className='col-2'>
-        <button type="button" className='btn btn-success kg-button' onClick={handleAddButtonClicked}>Add </button>
+        <button type="button" className='btn btn-success kg-button' onClick={handleAddButtonClicked}><RiAddLargeFill /> </button>
       </div>
     </div>
     </div>
